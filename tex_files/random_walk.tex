@@ -181,7 +181,7 @@ With this,
 The solution of the above exercise shows that there is no simple function by which we can compute the transient distribution of this simple random walk $Z$.
 Since a queueing process is typically a more complicated object (as we need to obtain $L$ from $Z$ via~\cref{eq:reich1}), our hopes of finding anything simple for the transient analysis of the $M/M/1$ queue should not be too high.
 And the $M/M/1$ is but the simplest queueing system; other queueing systems will be more complicated yet.
-We therefore give up the analysis of such transient queueing systems and we henceforth contend ourselves with the analysis of queueing systems in the limit as $t\to\infty$.
+We therefore give up the analysis of such transient queueing systems, and we henceforth contend ourselves with the analysis of queueing systems in the limit as $t\to\infty$.
 The limiting random variable $L$ is known as the \recall{steady-state limit} of the sequence of random variables $\{L_k\}$, and the distribution of~$L$ is known as the \recall{limiting distribution} or \emph{stationary distribution} of $\{L_k\}$.
 Taking these limits warrants two questions: what type of limit is actually meant here, and what is the rate of convergence to this limiting situation?
 Here we sidestep all such fundamental issues, as the details require measure theory and more advanced probability theory than we can deal with here.
@@ -216,19 +216,19 @@ Starting with $W_{Q,0}=5$ we use~\cref{eq:56} to compute the \emph{exact} distri
 We see that when $k=5$, the `hump' of $\P{W_{Q,5}=x}$ around $x=5$ is due the starting value of $W_{Q,0}=5$.
 However, for $k>10$ the distribution of $W_{Q,k}$ hardly changes, at least not visually.
 Apparently, the convergence of the sequence of distributions of $W_{Q,k}$ is rather fast.
-In the middle panel we show the results of a set of \emph{simulations} for increasing simulation length, up to $N=1000$ samples.
+In the middle panel, we show the results of a set of \emph{simulations} for increasing simulation length, up to $N=1000$ samples.
 Here the \emph{empirical distribution} for the simulation is defined as
 \begin{equation*}
 \P{W_Q\leq x} = \frac 1n \sum_{k=1}^n \1{W_{Q,k} \leq x},
 \end{equation*}
 where $W_{Q,k}$ is obtained by simulation.
 As should be clear from the figure, the simulated distribution also converges quite fast to some limiting function.
-Finally, in the right panel we compare the densities as obtained by the exact method and simulation with $n=1000$.
+Finally, in the right panel, we compare the densities as obtained by the exact method and simulation with $n=1000$.
 Clearly, for all practical purposes, these densities can be treated as the same.
 
 The combination of the fast convergence to the steady-state situation
 and the difficulties with the transient analysis validates, to some
-extent, that most queueing theory is concerned with the analysis of
+extent that most queueing theory is concerned with the analysis of
 the system in \emph{stationarity}. The study of queueing systems in
 stationary state will occupy us for the rest of the book.
 
