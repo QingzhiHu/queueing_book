@@ -11,7 +11,7 @@
 
 If the arrival and service processes are such that the queueing system is rate-stable, we can sensibly define other performance measures such as the average waiting time.
 In this section, we define the second most important performance measures; recall that the most important is the utilization $\rho$.
-At the end we provide an overview of the relations between these performance measures in~\cref{fig:constructiongg1}.
+At the end, we provide an overview of the relations between these performance measures in~\cref{fig:constructiongg1}.
 
 
 With the construction of queueing processes in~\cref{sec:constr-gg1-queu} we can compute the waiting time as observed by the first $n$, say, jobs.
@@ -26,7 +26,7 @@ and the expected time in queue as
 \end{equation}
 Note that these performance measures are limits of \emph{empirical} measures.
 Note also that these statistics are as \emph{observed by arriving jobs}: the first job has a waiting time $W_1$ at its arrival epoch, the second a waiting time $W_2$, and so on.
-For this reason we colloquially say that $\E W$ is the average waiting time as `seen by arrivals'.
+For this reason, we colloquially say that $\E W$ is the average waiting time as `seen by arrivals'.
 The \emph{distribution of the waiting times at arrival times} can be found by counting:
 \begin{equation}\label{eq:48}
  \P{W \leq x} = \lim_{n\to\infty} \frac 1n\sum_{k=1}^n \1{W_k\leq x}.
@@ -58,7 +58,7 @@ Assuming the limit exists we use~\cref{eq:14} to define the \recall{time-average
  \E L = \lim_{t\to\infty} \frac 1 t\int_0^t L(s) \d s.
 \end{equation}
 Observe that, notwithstanding that the symbols are the same, this expectation need not be the same as~\cref{eq:EQ}.
-In a loose sense we can say that $\E L$ is the average number in the system as perceived by the \emph{server}.
+In a loose sense, we can say that $\E L$ is the average number in the system as perceived by the \emph{server}.
 Next, define the \emph{time-average fraction of time the system contains at most $m$ jobs} as
 \begin{equation}
  \label{eq:47}
@@ -99,7 +99,7 @@ Consider a queueing system with constant service and inter-arrival times.
 
  Next, by assumption, $a_k$ customers arrive during period $k$.
  The first of these customers sees a queue length of $L_{k-1} - d_k$, the second $L_{k-1}-d_k + 1$, and so on until the last customer who sees a queue length of $L_{k-1} - d_k + a_k -1 = L_k -1$.
- Thus, of all jobs the last sees the largest queue.
+ Thus, of all jobs, the last sees the largest queue.
  Hence, if $L_k \leq m$, all customers of the batch see a queue less than $m$.
  If, however, $L_k > m$, then $L_k -m$ customers saw $m$ or more jobs in the system.
  Therefore, the fraction of arrivals that see a queue with $m$ or more jobs is equal to
