@@ -10,7 +10,7 @@
 
 In the analysis of any queueing process, the first step should be to check the relations between the arrival, service and departure rates.
 The concept of rate is crucial because it captures our intuition that when, in the long run, jobs arrive faster than they can leave, the system must `explode'.
-As we will see, when the arrival rate is smaller than the service rate, the system is stable.
+As we will see, when the arrival rate is lower than the service rate, the system is stable.
 Thus, the first performance measure we need to estimate for a queueing system is the ratio between the arrival and service rate.
 In this section, we develop some concepts and notation to formalize these ideas.
 We will use these concepts throughout the remainder of the book.
@@ -251,7 +251,7 @@ Here are some questions to help you interpret this formulation.
 \item Solve for $k_A$ and $k_B$ in terms of $S$, $\lambda_A, \lambda_B$ and $t_A, t_B$. 
 \item Generalize this to $m$ job classes and such that the cleaning
  time between jobs of class $i$ and $j$ is given by $S_{i j}$. (Thus,
- the setup times are sequence dependent.) 
+ the setup times are sequence-dependent.) 
 \end{enumerate}
 \end{hint}
 
@@ -263,7 +263,7 @@ Here are some questions to help you interpret this formulation.
  The number of jobs of type A processed during one such cycle is,
  of course, $k_A$. Observe next that the average number of jobs
  that arrive during one cycle is $\lambda_A T$. We of course want
- that $\lambda_A T< k_A$, i.e., less jobs of type A arrive on
+ that $\lambda_A T< k_A$, i.e., fewer jobs of type A arrive on
  average per cycle than what we can process.
 \end{solution}
 \end{exercise}
