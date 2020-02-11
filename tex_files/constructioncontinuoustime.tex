@@ -10,7 +10,7 @@
 \Opensolutionfile{ans}
 }
 
-In~\cref{sec:constr-discr-time} we modeled time as progressing in discrete `chunks': minutes, hours, days, and so on.
+In~\cref{sec:constr-discr-time} we modelled time as progressing in discrete `chunks': minutes, hours, days, and so on.
 For given numbers of arrivals and capacity per period we use the recursions~\cref{eq:31} to compute the departures and queue length per period.
 However, we can also model time in a continuous way, so that jobs can arrive at any moment and have arbitrary service times. 
 In this section, we consider a single-server FIFO queueing process in continuous time.
@@ -503,7 +503,7 @@ Once we have the arrival and departure processes it is easy to compute the \reca
  L(t) = A(t) - D(t) + L(0),
 \end{equation}
 where $L(0)$ is the number of jobs in the system at time $t=0$; typically we assume that $L(0)=0$.
-As in a queueing system, jobs can be in queue or in service, we distinguish between the number in the system $L(t)$, the number in queue $L_Q(t)$, and the number of jobs in service $L_s(t)$.
+As in a queueing system, jobs can be in queue or in service, and we distinguish between the number in the system $L(t)$, the number in queue $L_Q(t)$, and the number of jobs in service $L_s(t)$.
 
 
 In summary, starting from a sequence of inter-arrival times $\{X_k\}$ and service times $\{S_k\}$ we can obtain a set of recursions by which we simulate a queueing process in continuous time, A bit of experimentation with computer programs such as $R$ or Python will reveal that this is easy.
